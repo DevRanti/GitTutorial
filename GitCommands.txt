@@ -1,0 +1,102 @@
+=> First you need to create yourself what is known as an SSH key:
+==========
+cd
+mkdir .ssh
+cd .ssh
+ssh-keygen
+=============
+
+=> mkdir ~/directoryName - is used for creating a new directory
+=> mkdir directoryame - is used for creating a sub-directory e.g 
+    creating a new directory for anew project 
+=> ls - list all the files in a directory
+=> cd ~/directoryName - to open a directory
+=> cat filename - is used to open a file in a directory
+
+=> COnfiguring git with your GitHub username and email 
+=============
+git config --global user.name "USERNAME"
+git config --global user.email "EMAIL"
+================
+
+=> Creating a git repository
+---------------
+I suggest that you create all your Git repositories under a single directory
+called git. Let’s start by creating this directory
+----------------
+===================
+mkdir ~/git
+===============
+
+=> Useful vim commands 
+------------------------------
+* Esc - Enter command mode
+* i - Insert text at cursor
+* A - Move to end of line and insert text
+* r - Replace a single character under the cursor
+* R - Overwrite characters
+* :w - Write the file
+* :q - Quit the editor
+* :wq - Write the file and quit the editor
+--------------------------------
+
+=> git init - after opening a project repo dir, this tells git 
+    that the directory is a repository 
+
+=> Creating and editing files 
+=======================
+* git add filenameAndExtension - tells git you want to track this file
+* git commit -a -m "comments" - to make a commitwith comments
+* git status - is used to check status of the files 
+* touch filenameAndExtension - to create a new file in the repo
+* rm filenameAndExtension - to delete a file 
+* git log - shows you all the commits you have made 
+* git mv oldfilename newFilename - is used for renaming files 
+=========================
+
+=> Syncing local git repo with GitHub 
+========================
+* git remote add origin git@github.com:USERNAME/localRepoName.git - this
+    connects to github so the code can be pushed
+* git push -u origin master - this pushes the code to github master
+============================ 
+
+=> Undoing changes 
+=====================
+* git checkout -- filenameAndExtension - to revert the fileback to the last commit 
+* git reset --hard - revert to the last commit for all the files in the repo 
+* git revert commitIdentifier - is used to remove a commit 
+===========================
+
+=> Being more selective 
+======================
+* git checkout commitID -- filename - to get the older version
+    of a particular file
+* git checkout commitID - to get back to an older version without
+    undoing the changes between the old and new versions
+==============================
+
+=> Branching 
+======================
+* git checkout -b branchName - is used to create a branch
+* git push -u origin branchName - to link the branch to the master
+* git checkout branchName - to return to any branch
+* git branch - to know the branch you are working in 
+=============================
+
+=> Checking differnces between branches 
+=================================
+* git diff master - shows the difference between the current branch and master 
+================================
+
+=> Merging branches 
+========================
+* git merge protlength - make sure you are in master branch before merging 
+==========================
+
+=> Deleting branches 
+===========================
+* git branch -d branchname - to delete a branch 
+* git push origin --delete branchName 
+  git remote prune origin - these two commands are used to delete the branch on  github 
+================================

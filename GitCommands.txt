@@ -100,3 +100,8 @@ mkdir ~/git
 * git push origin --delete branchName 
   git remote prune origin - these two commands are used to delete the branch on  github 
 ================================
+
+=> Tags and Releases 
+==========================
+* git tag yourTagName - to add a version number to your repo
+* git push --tags - to push the tags to github

@@ -6,7 +6,7 @@ cd .ssh
 ssh-keygen
 =============
 
-=> mkdir ~/directoryName - is used for creating a new directory
+=> mkdir ~/directoryName - is used for creating a new repository directory
 => mkdir directoryame - is used for creating a sub-directory e.g 
     creating a new directory for anew project 
 => ls - list all the files in a directory

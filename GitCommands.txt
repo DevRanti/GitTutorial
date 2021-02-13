@@ -125,3 +125,11 @@ Then go t github to publish the release
 
 => Managing multiple copies of a Repo 
 =========================================
+* echo string > filename - to store the string in the file 
+* git pull - pull information from github
+=========================================
+
+=> Dealing with simple conflicts 
+=============================
+*
+=============================

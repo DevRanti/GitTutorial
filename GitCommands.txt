@@ -105,3 +105,23 @@ mkdir ~/git
 ==========================
 * git tag yourTagName - to add a version number to your repo
 * git push --tags - to push the tags to github
+Then go t github to publish the release 
+==============================
+
+=> Summarizing your changes 
+=============================
+* git shortlog - shows you sll your commit comments without other information
+* git shortlog commitId1. .commitId2 -  to compare commit comments 
+* git shortlog commitId. .HEAD - find changes betweeen a partcular commit and the current version
+* git shortlog tag. .HEAD - using tag insead of commit 
+* git shortlog previousTagname. .HEAD - see changes between previous tags and the current tag 
+===================================
+
+=> Downloading a Repository 
+========================================
+* Create another directory to hold the repo 
+* Open the new directory 
+* git clone git@github.com:USERNAME/RepoName.git - to clone the repo 
+
+=> Managing multiple copies of a Repo 
+=========================================

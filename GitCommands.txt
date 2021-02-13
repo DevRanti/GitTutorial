@@ -129,8 +129,3 @@ Then go t github to publish the release
 * git pull - pull information from github to enable it 
     sync with local repo
 =========================================
-
-=> Dealing with simple conflicts 
-=============================
-*
-=============================
